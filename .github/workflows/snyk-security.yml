@@ -65,7 +65,7 @@ jobs:
         uses: zaproxy/action-baseline@v0.6.1
         # uses: zaproxy/action-full-scan@v0.3.0
         with:
-          docker_name: 'owasp/modsecurity-crs'
+          docker_name: 'owasp/dependency-check'
           target: 'http://testphp.vulnweb.com/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
